@@ -5,3 +5,23 @@
   background-color: #eaeaea;
   align-self: center;
 }
+
+@mixin light-font {
+  font-family: 'TT Lakes';
+  font-weight: 300;
+}
+
+@mixin regular-font {
+  font-family: 'TT Lakes';
+  font-weight: 400;
+}
+
+@mixin medium-font {
+  font-family: 'TT Lakes';
+  font-weight: 500;
+}
+
+@mixin bold-font {
+  font-family: 'TT Lakes';
+  font-weight: 700;
+}
