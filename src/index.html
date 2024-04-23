@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <header class="top-bar">
+      <button class="button burger-button burger-button--offset">
+        <img src="./imgs/burger.svg" alt="" class="button__img" />
+      </button>
+      <a href="#" class="logo">
+        <img src="./imgs/logo.png" alt="logo" class="logo__img" />
+      </a>
+      <ul class="buttons-list mobile-hidden buttons-list--top-bar">
+        <li class="buttons-list__item">
+          <button class="button">
+            <img src="./imgs/call.svg" alt="" class="button_img" />
+          </button>
+        </li>
+        <li class="buttons-list__item">
+          <button class="button">
+            <img src="./imgs/chat.svg" alt="" class="button_img" />
+          </button>
+        </li>
+        <li class="buttons-list__item">
+          <button class="button">
+            <img src="./imgs/profile.svg" alt="" class="button_img" />
+          </button>
+        </li>
+      </ul>
+      <ul class="buttons-list buttons-list--top-bar">
+        <li class="buttons-list__item">
+          <button class="button">
+            <img src="./imgs/repair.svg" alt="" class="button__img" />
+          </button>
+        </li>
+        <li class="buttons-list__item">
+          <button class="button">
+            <img src="./imgs/checkstatus.svg" alt="" class="button__img" />
+          </button>
+        </li>
+      </ul>
+    </header>
+  </body>
+</html>
