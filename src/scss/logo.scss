@@ -1,0 +1,19 @@
+.logo {
+  display: flex;
+  @media screen and (min-width: 768px) {
+    &:before {
+      @include divider;
+      margin-right: 20px;
+      margin-left: 4px;
+    }
+  }
+}
+
+.logo__img {
+  height: 50px;
+  width: auto;
+}
+
+.logo--topbar-position {
+  margin-right: auto;
+}

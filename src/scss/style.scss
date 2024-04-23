@@ -1,3 +1,12 @@
 @import '../../node_modules/normalize.css/normalize.css';
 @import 'button-reset';
+@import 'fonts';
 @import 'list-reset';
+@import 'mixins', 'colours';
+@import 'topbar';
+@import 'middlebar';
+@import 'nav';
+@import '../../node_modules/swiper/swiper-bundle.css';
+.page {
+  background-color: $grey-bgc;
+}

@@ -1,0 +1,27 @@
+@import 'logo';
+
+.topbar {
+  background-color: #fff;
+  min-width: 320px;
+  display: flex;
+  gap: 16px;
+  padding: 19px 16px;
+  align-items: center;
+}
+
+.topbar__user-actions {
+  display: none;
+  gap: 16px;
+  @media screen and (min-width: 768px) {
+    display: inherit;
+  }
+}
+
+.topbar__applications {
+  display: inherit;
+  gap: 16px;
+  &:before {
+    @include divider;
+    margin: 0 4px;
+  }
+}

@@ -1,0 +1,7 @@
+@mixin divider {
+  content: '';
+  width: 2px;
+  height: 32px;
+  background-color: #eaeaea;
+  align-self: center;
+}

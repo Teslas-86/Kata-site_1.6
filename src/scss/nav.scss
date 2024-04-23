@@ -1,0 +1,32 @@
+.nav {
+  @media screen and (min-width: 1100px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  li {
+    width: auto !important;
+  }
+  .button {
+    padding: 8px 16px;
+    background-color: $grey-bgc;
+    color: #7e7e82;
+    text-align: center;
+    font-size: 16px;
+  }
+  .button__active {
+    background-color: #fff;
+    border: 2px #b8ffec solid;
+    border-radius: 6px;
+  }
+}
+
+.nav-swiper {
+  padding: 0 16px;
+  @media screen and (min-width: 768px) {
+    padding: 0 24px;
+  }
+  @media screen and (min-width: 1440px) {
+    padding: 0 34px;
+  }
+}
