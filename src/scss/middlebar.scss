@@ -2,7 +2,29 @@
   &__actions {
     display: none;
   }
-  .middlebar__title {
+
+  &__title {
     @include bold-font;
+    letter-spacing: -0.6px;
+    line-height: 40px;
+    font-size: 28px;
+    display: flex;
+  }
+
+  &__title::before {
+    content: '';
+    width: 4px;
+    height: 40px;
+    border-radius: 0 4px 4px 0;
+    background-color: #41f6d7;
+    margin-right: 12px;
+    @media screen and (min-width: 768px) {
+      margin-right: 20px;
+    }
+    @media screen and (min-width: 1440px) {
+      margin-right: 30px;
+      margin-left: 2px;
+      border-radius: 4px;
+    }
   }
 }

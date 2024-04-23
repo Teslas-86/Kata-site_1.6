@@ -42,7 +42,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  resizableSwiper('(max-width: 1100px)', '.nav-swiper', {
+  resizableSwiper('(max-width: 1280px)', '.nav-swiper', {
     slidesPerView: 'auto',
     spaceBetween: 10,
   })
