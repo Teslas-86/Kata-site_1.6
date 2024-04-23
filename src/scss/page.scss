@@ -1,4 +1,5 @@
 .page {
   background-color: $grey-bgc;
   @include regular-font;
+  min-width: 320px;
 }

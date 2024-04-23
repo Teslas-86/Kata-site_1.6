@@ -1,6 +1,35 @@
 .middlebar {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 24px;
+    padding-bottom: 32px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding-top: 42px;
+    padding-bottom: 8px;
+  }
+
+  .button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: $grey-bgc;
+    margin-right: 32px;
+
+    p {
+      margin: 0;
+    }
+  }
+
   &__actions {
     display: none;
+    @media screen and (min-width: 1440px) {
+      display: flex;
+    }
   }
 
   &__title {
@@ -9,6 +38,7 @@
     line-height: 40px;
     font-size: 28px;
     display: flex;
+    margin: 0;
   }
 
   &__title::before {
