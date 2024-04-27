@@ -1,0 +1,41 @@
+.about {
+  margin-top: 24px;
+  padding-right: 24px;
+
+  @media screen and (min-width: 700px) {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 90%, 10%;
+    grid-template-areas:
+      'content photo'
+      'content photo';
+    margin-top: 32px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-top: 16px;
+  }
+
+  .about__content {
+    padding: 0 16px;
+    grid-area: content;
+  }
+
+  .about__text {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    text-align: left;
+  }
+
+  .about__image {
+    width: 100%;
+    height: auto;
+    margin-top: 16px;
+    grid-area: photo;
+    @media screen and (min-width: 700px) {
+      border-radius: 10px;
+      margin: 0;
+    }
+  }
+}

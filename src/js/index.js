@@ -46,4 +46,10 @@ window.addEventListener('DOMContentLoaded', () => {
     slidesPerView: 'auto',
     spaceBetween: 10,
   })
+
+  resizableSwiper('(max-width: 768px)', '.brands__swiper', {
+    slidesPerView: 'auto',
+    spaceBetween: 16,
+    loop: true,
+  })
 })

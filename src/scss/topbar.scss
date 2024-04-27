@@ -6,25 +6,35 @@
 
   padding: 19px 16px;
   align-items: center;
+
   @media screen and (min-width: 1440px) {
     display: none;
   }
-}
 
-.topbar__user-actions {
-  display: none;
-  gap: 16px;
-  @media screen and (min-width: 768px) {
-    display: inherit;
+  &__header {
+    display: flex;
   }
-}
 
-.topbar__applications {
-  display: inherit;
-  gap: 16px;
-  &:before {
-    @include divider;
-    margin-right: 4px;
-    margin-left: 20px;
+  &__user-actions {
+    display: none;
+    gap: 16px;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      margin-left: auto;
+    }
+  }
+
+  &__applications {
+    display: flex;
+    gap: 16px;
+    @media screen and (max-width: 768px) {
+      margin-left: auto;
+    }
+    &:before {
+      @include divider;
+      margin-right: 4px;
+      margin-left: 20px;
+    }
   }
 }

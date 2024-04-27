@@ -2,4 +2,10 @@
   background-color: $grey-bgc;
   @include regular-font;
   min-width: 320px;
+  color: #000;
+
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    flex-direction: row;
+  }
 }

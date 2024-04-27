@@ -1,0 +1,11 @@
+.more-button {
+  display: flex;
+  align-items: center;
+  background-color: $grey-bgc;
+  &::before {
+    content: '';
+    background-image: url(../img/expand.svg);
+    width: 24px;
+    height: 24px;
+  }
+}

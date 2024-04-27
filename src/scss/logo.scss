@@ -7,6 +7,12 @@
       margin-left: 4px;
     }
   }
+
+  @media screen and (min-width: 1440px) {
+    &:before {
+      display: none;
+    }
+  }
 }
 
 .logo__img {
@@ -15,6 +21,5 @@
 }
 
 .logo--topbar-position {
-  margin-right: auto;
   margin-left: 16px;
 }
