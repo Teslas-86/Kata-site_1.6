@@ -1,0 +1,15 @@
+.get-offer {
+  padding: 0 16px;
+  margin-bottom: 60px;
+  p {
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  button {
+    text-align: left;
+    background-color: $grey-bgc;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+  }
+}
