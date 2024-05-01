@@ -1,0 +1,31 @@
+.repair {
+  &__swiper {
+    @media screen and (max-width: 768px) {
+      @include slider-gradient(160px);
+    }
+    padding: 0 16px;
+
+    .swiper-wrapper {
+      li {
+        width: 240px;
+        height: 160px;
+        background-color: #fff;
+        border-radius: 6px;
+
+        button {
+          border: 1px solid #eaeaea;
+          border-radius: 6px;
+          width: inherit;
+          height: inherit;
+          padding: 16px;
+          display: flex;
+
+          img {
+            margin-left: auto;
+            margin-top: auto;
+          }
+        }
+      }
+    }
+  }
+}

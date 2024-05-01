@@ -42,7 +42,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  resizableSwiper('(max-width: 1280px)', '.nav-swiper', {
+  resizableSwiper('(max-width: 1280px)', '.nav__swiper', {
     slidesPerView: 'auto',
     spaceBetween: 10,
   })
@@ -50,6 +50,27 @@ window.addEventListener('DOMContentLoaded', () => {
   resizableSwiper('(max-width: 768px)', '.brands__swiper', {
     slidesPerView: 'auto',
     spaceBetween: 16,
-    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  })
+
+  resizableSwiper('(max-width: 768px)', '.repair__swiper', {
+    slidesPerView: 'auto',
+    spaceBetween: 16,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  })
+
+  resizableSwiper('(max-width: 768px)', '.price__swiper', {
+    slidesPerView: 'auto',
+    spaceBetween: 16,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
   })
 })

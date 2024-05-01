@@ -1,0 +1,32 @@
+.price {
+  &__swiper {
+    @media screen and (max-width: 768px) {
+      @include slider-gradient(200px);
+    }
+    padding: 0 8px;
+    .swiper-slide {
+      width: 260px;
+      height: 200px;
+      background-color: #fff;
+      border-radius: 6px;
+      ul {
+        height: 168px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 16px;
+        li {
+          p {
+            &:nth-child(1) {
+              color: #7e7e82;
+              margin-bottom: 4px;
+            }
+          }
+          button {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

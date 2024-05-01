@@ -25,3 +25,26 @@
   font-family: 'TT Lakes-Bold';
   font-weight: 700;
 }
+
+@mixin slider-gradient($height) {
+  &::after {
+    background: linear-gradient(270deg, $grey-bgc 20%, transparent);
+    content: '';
+    height: $height;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 24px;
+    z-index: 200;
+  }
+  &::before {
+    background: linear-gradient(90deg, $grey-bgc 20%, transparent);
+    content: '';
+    height: $height;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 24px;
+    z-index: 200;
+  }
+}

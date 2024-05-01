@@ -22,39 +22,20 @@
     border: 2px #b8ffec solid;
     border-radius: 6px;
   }
-}
 
-.nav-swiper {
-  padding: 0 16px;
+  &__swiper {
+    padding: 0 16px;
 
-  @media screen and (min-width: 768px) {
-    padding: 0 24px;
-  }
-
-  @media screen and (min-width: 1440px) {
-    padding: 0 34px;
-  }
-
-  @media screen and (max-width: 1280px) {
-    &::after {
-      background: linear-gradient(270deg, $grey-bgc 20%, transparent);
-      content: '';
-      height: 44px;
-      position: absolute;
-      right: 0;
-      top: 0;
-      width: 24px;
-      z-index: 200;
+    @media screen and (min-width: 768px) {
+      padding: 0 24px;
     }
-    &::before {
-      background: linear-gradient(90deg, $grey-bgc 20%, transparent);
-      content: '';
-      height: 44px;
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 24px;
-      z-index: 200;
+
+    @media screen and (min-width: 1440px) {
+      padding: 0 34px;
+    }
+
+    @media screen and (max-width: 1280px) {
+      @include slider-gradient(40px);
     }
   }
 }
